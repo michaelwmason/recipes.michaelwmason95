@@ -1,0 +1,37 @@
+@import "~@angular/material/theming";
+
+.header {
+  height: 20vh;
+  font-size: 7vh;
+  text-align: center;
+}
+
+.spacer {
+  flex: 1 1 auto;
+}
+
+.food-picture-container {
+  height: 45vh;
+}
+
+.header-mat-icon {
+  font-size: 40vh;
+  height: 40vh;
+  width: 40vh;
+  text-align: center;
+}
+
+.content {
+  margin-top: 5vh;
+  margin-left: 5vw;
+  margin-right: 5vw;
+}
+
+@mixin candy-carousel-theme($theme) {
+  $primary: map-get($theme, primary);
+  $accent: map-get($theme, accent);
+  .bottom {
+    bottom: 0px;
+    background-color: $primary;
+  }
+}

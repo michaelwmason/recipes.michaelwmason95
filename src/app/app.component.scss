@@ -1,0 +1,21 @@
+.spacer {
+  flex: 1 1 auto;
+}
+
+::ng-deep .mat-toolbar {
+  height: 10vh;
+}
+
+.toolbar-button {
+  font-size: 3vh;
+}
+
+mat-icon {
+  font-size: 5vh;
+}
+
+.hover:hover {
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  transition: color 0.3s ease-in-out;
+}
