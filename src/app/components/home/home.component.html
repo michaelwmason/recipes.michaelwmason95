@@ -1,0 +1,78 @@
+<div fxLayout="column" fxLayoutGap="5vh">
+  <div fxFlex fxLayout="row" fxLayoutAlign="center center" class="header">
+    <span class="spacer"></span>
+    <div fxFlex>Recipes Galore</div>
+    <span class="spacer"></span>
+  </div>
+
+  <div
+    fxFlex
+    fxLayout="row"
+    fxLayoutAlign="center center"
+    class="food-picture-container"
+  >
+    <span class="spacer"></span>
+    <mat-icon fxFlex class="header-mat-icon"> emoji_food_beverage </mat-icon>
+    <span class="spacer"></span>
+  </div>
+
+  <div fxFlex fxLayout="row" class="content">
+    <div fxFlex fxLayout="column">
+      <h1 fxFlex>Featured Recipe</h1>
+      <h2 fxFlex>Cilantro, Siracha, Soy Sauce Turkey Burgers</h2>
+      <p fxFlex>
+        This recipe was recommened to me by my wife, Amber. She found it from a
+        meal delivery service and instantly loved it! She absolutely loves
+        cilantro, and it is complemented nicely by the sriracha and soy sauce.
+        You won't regret making this on July 4th or just a normal Tuesday.
+      </p>
+    </div>
+    <div fxFlex fxLayout="column" fxLayoutAlign="center center">
+      <mat-icon
+        fxFlex="50"
+        style="font-size: 20vh; text-align: center; height: 20vh; width: 20vh"
+      >
+        fastfood
+      </mat-icon>
+    </div>
+  </div>
+
+  <div fxFlex fxLayoutGap="5vh" fxLayout="column">
+    <div fxFlex fxLayout="row" fxLayoutAlign="center center" class="subheader">
+      <span class="spacer"></span>
+      <div fxFlex>Suggested Recipes</div>
+      <span class="spacer"></span>
+    </div>
+    <div fxFlex fxLayout="row" class="wrap">
+      <div
+        *ngFor="let r of recipes$ | async"
+        fxFlex="33.3%"
+        style="text-align: center; margin-top: 5vh; margin-bottom: 5vh"
+        class="context-text"
+      >
+        {{ r.name }}
+      </div>
+    </div>
+  </div>
+
+  <div fxFlex fxLayout="row" class="content">
+    <div fxFlex fxLayout="column">
+      <h1 fxFlex>About</h1>
+      <p fxFlex>
+        This website was originally built as a personal project to learn new
+        software development tools and languages. What started as a simple
+        <i>Hello, World!</i> app turned into something full featured and
+        production ready. To learn more about how this web application was built
+        click <a href="/about"> here</a>.
+      </p>
+    </div>
+    <div fxFlex fxLayout="column" fxLayoutAlign="center center">
+      <mat-icon
+        fxFlex="50"
+        style="font-size: 20vh; text-align: center; height: 20vh; width: 20vh"
+      >
+        fastfood
+      </mat-icon>
+    </div>
+  </div>
+</div>

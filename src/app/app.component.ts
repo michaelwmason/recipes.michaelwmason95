@@ -9,7 +9,11 @@ import { Router } from '@angular/router';
 export class AppComponent {
   constructor(private router: Router) {}
 
-  foo(): void {
+  navToMichaelWMason95(): void {
     location.href = 'http://michaelwmason95.com';
+  }
+
+  route(location: string) {
+    this.router.navigate([location]);
   }
 }

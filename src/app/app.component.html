@@ -1,21 +1,38 @@
 <mat-toolbar color="primary" fxLayout="row" fxLayoutAlign="start center">
-  <button fxFlex="0 0 auto" mat-button class="toolbar-button">Home</button>
+  <button
+    fxFlex="0 0 auto"
+    mat-button
+    class="toolbar-button"
+    (click)="route('/')"
+  >
+    Home
+  </button>
   <button fxFlex="0 0 auto" mat-button class="toolbar-button">Mine</button>
   <button fxFlex="0 0 auto" mat-button class="toolbar-button">Add</button>
   <button fxFlex="0 0 auto" mat-button class="toolbar-button">Explore</button>
+  <button
+    fxFlex="0 0 auto"
+    mat-button
+    class="toolbar-button"
+    (click)="route('/about')"
+  >
+    About
+  </button>
   <span class="spacer"></span>
   <button fxFlex="0 0 auto" mat-icon-button class="toolbar-button">
     <mat-icon>person</mat-icon>
   </button>
 </mat-toolbar>
-
+<div style="height: 10vh">&nbsp;</div>
 <router-outlet></router-outlet>
+
+<div style="height: 10vh">&nbsp;</div>
 
 <mat-toolbar
   color="primary"
   fxLayout="row"
   fxLayoutAlign="center center"
-  style="bottom: 0px"
+  class="bottom-toolbar"
 >
   <span class="spacer"></span>
   <p fxFlex="0 0 auto" style="margin-bottom: 0px">Michael</p>
@@ -24,7 +41,7 @@
     src="./../favicon.ico"
     style="height: 9vh; width: 9vh; margin-left: 2vw; margin-right: 2vw"
     class="hover"
-    (click)="foo()"
+    (click)="navToMichaelWMason95()"
   />
   <p fxFlex="0 0 auto" style="margin-bottom: 0px">Mason</p>
   <span class="spacer"></span>

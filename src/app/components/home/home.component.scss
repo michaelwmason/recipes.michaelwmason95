@@ -6,6 +6,14 @@
   text-align: center;
 }
 
+.subheader {
+  margin-top: 10vh;
+  margin-bottom: 10vh;
+  height: 15vh;
+  font-size: 5vh;
+  text-align: center;
+}
+
 .spacer {
   flex: 1 1 auto;
 }
@@ -27,6 +35,11 @@
   margin-right: 5vw;
 }
 
+.context-text {
+  font-size: 4vh;
+  text-align: center;
+}
+
 @mixin candy-carousel-theme($theme) {
   $primary: map-get($theme, primary);
   $accent: map-get($theme, accent);
@@ -34,4 +47,8 @@
     bottom: 0px;
     background-color: $primary;
   }
+}
+
+.wrap {
+  flex-wrap: wrap;
 }
