@@ -1,4 +1,9 @@
-<mat-toolbar color="primary" fxLayout="row" fxLayoutAlign="start center">
+<mat-toolbar
+  style="max-width: 100%"
+  color="primary"
+  fxLayout="row"
+  fxLayoutAlign="start center"
+>
   <button
     fxFlex="0 0 auto"
     mat-button
@@ -18,8 +23,16 @@
   >
     About
   </button>
-  <span class="spacer"></span>
-  <button fxFlex="0 0 auto" mat-icon-button class="toolbar-button">
+  <span
+    *ngIf="(screenSize$ | async) !== 'xs' && (screenSize$ | async) !== 'sm'"
+    class="spacer"
+  ></span>
+  <button
+    fxFlex="0 0 auto"
+    mat-icon-button
+    class="toolbar-button"
+    style="margin-right: 1.5vw"
+  >
     <mat-icon>person</mat-icon>
   </button>
 </mat-toolbar>

@@ -4,6 +4,7 @@
 
 ::ng-deep .mat-toolbar {
   height: 10vh;
+  width: 100% !important;
 }
 
 .toolbar-button {
@@ -21,7 +22,11 @@ mat-icon {
 }
 
 .bottom-toolbar {
-    position: sticky;
-    position: -webkit-sticky; /* For macOS/iOS Safari */
-    top: 0; /* Sets the sticky toolbar to be on top */
-    z-index: 1000; /* Ensure that your app's content doesn't overlap the toolbar */}
+  align-self: flex-end;
+  position: sticky;
+  position: -webkit-sticky; /* For macOS/iOS Safari */
+  top: 0; /* Sets the sticky toolbar to be on top */
+  z-index: 1000; /* Ensure that your app's content doesn't overlap the toolbar */
+  vertical-align: bottom;
+  top: 100%;
+}

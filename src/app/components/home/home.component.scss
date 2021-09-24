@@ -1,9 +1,11 @@
 @import "~@angular/material/theming";
 
 .header {
-  height: 20vh;
+  // height: auto;
+  overflow: visible;
   font-size: 7vh;
   text-align: center;
+  flex: 1 1 auto;
 }
 
 .subheader {
@@ -12,10 +14,6 @@
   height: 15vh;
   font-size: 5vh;
   text-align: center;
-}
-
-.spacer {
-  flex: 1 1 auto;
 }
 
 .food-picture-container {
